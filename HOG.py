@@ -3,12 +3,12 @@ import cv2 as cv
 from time import sleep
 
 from skimage.feature import hog
-from skimage import data, exposure
+from skimage import exposure
 
 cap = cv.VideoCapture("white_line_3.mp4")
 # hog = cv.HOGDescriptor()
 
-for i in range(1000):
+for i in range(1):
     ret, frame = cap.read()
     fd, hog_image = hog(frame, orientations=8, pixels_per_cell=(16,16),
                     cells_per_block=(1,1),visualize=True,multichannel=True)
