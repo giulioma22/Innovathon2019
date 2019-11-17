@@ -1,4 +1,3 @@
-import matplotlib.pyplot as pyplot
 import cv2 as cv
 from time import sleep
 
