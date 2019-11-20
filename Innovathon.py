@@ -12,7 +12,7 @@ for i in range(1000):
     hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
     lower_white = np.array([0,0,200])
     upper_white = np.array([255,255,235])
-
+ 
     # Check for specific range of white
     mask_white = cv.inRange(hsv, lower_white, upper_white)
 

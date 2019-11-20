@@ -16,7 +16,7 @@ hog.setSVMDetector(cv.HOGDescriptor_getDefaultPeopleDetector())
 
 for i in range(1):
     (rects,weights) = hog.detectMultiScale(frame,winStride=winStride,padding=padding,scale=scale,useMeanshiftGrouping=meanShift)
-    bBoxes = []
+    bBoxes = [] 
 
     for (x,y,w,h) in rects:
         # Draw and count bounding box only if big enough
