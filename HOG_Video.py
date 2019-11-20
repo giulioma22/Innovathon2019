@@ -1,6 +1,7 @@
 import cv2 as cv
 from time import sleep
 
+# Multiscale parameters
 winStride = (4,4)
 padding = (16,16)
 scale = 1.05
